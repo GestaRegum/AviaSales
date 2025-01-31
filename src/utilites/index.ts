@@ -1,1 +1,1 @@
-export { getConvertMinutesToTime, getDepartureTime } from './Utilites';
+export { getConvertMinutesToTime, getDepartureTime } from './utilites';
