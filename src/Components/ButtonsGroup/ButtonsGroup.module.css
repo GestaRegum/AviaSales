@@ -1,0 +1,32 @@
+.buttonGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 50px;
+  position: sticky;
+  top: 10px;
+}
+
+.buttonActive {
+  font-size: 12px;
+  background-color: #2196f3;
+  border: 1px solid #2196f3;
+  color: white;
+  cursor: pointer;
+}
+
+.buttonFltr {
+  font-size: 12px;
+  background-color: #ffffff;
+  border: 1px solid #dfe5ec;
+  cursor: pointer;
+}
+
+.buttonActive:first-child,
+.buttonFltr:first-child {
+  border-radius: 7px 0 0 7px;
+}
+
+.buttonActive:last-child,
+.buttonFltr:last-child {
+  border-radius: 0 7px 7px 0;
+}
