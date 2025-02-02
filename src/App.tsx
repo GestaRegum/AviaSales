@@ -50,13 +50,13 @@ export function App() {
               <Empty />
             </div>
           ) : (
-            visibleTickets.map((ticket: Ticket, index: number) => (
+            visibleTickets.map((ticket: Ticket) => (
               <div key={ticket.segments[0].date + ticket.segments[1].date}>
                 <TicketCard ticket={ticket} />
-                {index === visibleTickets.length - 1 ? <div ref={ref} /> : null}
               </div>
             ))
           )}
+          {<div ref={ref} />}
         </div>
 
         {loading ? <Spin /> : null}
